@@ -13,7 +13,7 @@ output = image.copy()
 for c in cnts:
     cv2.drawContours(output, [c], -1, (0, 0, 0), 1)
 
-text = "Group 1044. Hon Veronika Vladislavovna. {} objects".format(len(cnts))
+text = "FIO. {} objects".format(len(cnts))
 cv2.putText(output, text, (10, 25), cv2.FONT_HERSHEY_DUPLEX, 0.5, (0, 0, 0), 1)
 
 height, width, _ = image.shape
